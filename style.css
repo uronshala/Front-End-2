@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: 'Rapier Zero';
+    src: url(/RapierZero.woff) format('woff');
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto' , 'sans-serif';
+    color: black;
+    line-height:1.6;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+h1{
+    color:orange;
+}
+h1,
+h2 {
+    font-weight: 300 ;
+    line-height:1.2;
+    margin: 10px 0;
+}
+p {
+    margin:10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*navbar*/
+.navbar{
+    background-color:#191919;
+    color: orange;
+    height:70px;
+}
+.navbar ul {
+    display :flex;
+
+}
+
+.navbar a {
+    color: orange;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: solid 2px orange;
+}
+a.logo:hover{
+    border-bottom: 0px;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+/*utility*/
+.container {
+    max-width:  1100px;
+    margin:0 auto;
+
+    padding:0 40px;
+
+}
+
+.flex{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+/*welcomephoto*/
+.wphoto {
+    background:url(/img/main-img.jpg);
+    height:60vh;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    opacity:0.75;
+}
+.center-text h1{
+    font-family:'Rapier Zero';
+    font-size: 44px;
+    color:white;
+
+}
+/*cards*/
+.toptext{
+    display: flex;
+   background: #424242;
+   justify-content:center;
+}
+.toptext h1{
+    padding:4px 16px;
+    color: orange;
+
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-flow: wrap;
+    margin:0 auto;
+    background: #424242;
+
+}
+
+.card {
+    width: 25%;
+    background:white;
+    border-radius:  15px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    transition:0.3s;
+
+}
+.card:hover {
+    transform: scale(1.02);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card-head-first{
+    display: flex ;
+    padding:125px 0px;
+    background:url(/img/card1.png);
+    max-height: 100%;
+    width:auto;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.card-head-second{
+    display: flex ;
+    background: url(/img/ryzen.png);
+    padding: 125px 0px;
+    max-width: 100%;
+    height:auto;
+    background-size:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.card-head-third{
+    display: flex ;
+    background:url(/img/intel.png);
+    max-width: 100%;
+    height:auto;
+    padding: 125px 0px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.card-body{
+    padding: 20px 20px;
+    text-align:center;
+    font-size: 14px;
+    background:white;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.card-body .btn{
+    display:block;
+    color:orange;
+    text-align: center;
+    text-decoration: none;
+    margin-top:30px;
+    padding: 2px 2px;
+    border: solid 1px orange;
+    background:transparent;
+    border-radius: 10px;
+}
+/*form*/
+.formcase {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 400px;
+    background: #212121;
+    color:#fff;
+}
+.formcase h1{
+    text-align:center;
+    font-size: 28px;
+    padding:5px 5px;
+    color: white;
+    background-color:orange;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.formcase h2{
+    color:orange;
+    text-align: center;    
+}
+.formcase p{
+    margin: 20px 0;
+    font-weight:bolder;
+}
+.cardF {
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,2) ;
+    padding: 20px;
+    margin-top:30px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 600px 400px;
+    gap: 20px;
+    justify-content:center;
+    align-items: center;
+}
+.buildform form {
+    position: relative;
+    z-index:100;
+    padding: 40px;
+}
+.buildform form .form-control{
+    margin:15px 0;
+}
+.buildform form input[type='text'],.buildform form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid orange;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.buildform form input:focus{
+    outline: none
+}
+.btn-send{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: solid 1px orange;
+    background:transparent;
+    border-radius: 10px;
+    color:orange;
+
+}
+/*footer*/
+.footer {
+        display:flex;
+        position: absolute;
+        grid-template-columns: 600px 400px;
+        gap: 20px;
+        justify-content:center;
+        align-items: center;
+        background:#191919;
+        width: 100%;
+    }
+.topfooter{
+    height: 200px;
+    position: relative;
+    margin-top: 10px;
+    
+}
+.topfooter h1{
+    background:transparent;
+    margin-top: 10px;
+    color: orange;
+    margin-left: 10px;
+    font-size: 30px;
+    width: 110px;
+    border-radius:  15px;
+    padding:10px 10px;
+
+}
+.topfooter h2{
+    color: orange;
+    font-size: 16px;
+    text-align: center;
+    border:1px solid white;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    padding: 7px 7px;
+    position:relative;
+    width: 600px;
+}
+.rightfooter {
+    display:grid;
+    gap: 15px;
+    justify-content:center;
+    align-items: center;
+}
+.rightfooter a {
+    color:orange;
+    font-size: 16px;
+    cursor: pointer;
+}
+.rightfooter a:hover{
+    border-bottom: 1px solid white;
+    color:white;
+}
+/*contact*/
+.contactbody {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: #212121;
+    position: relative;
+    height:85vh;
+}
+.contactf h1 {
+    font-size: 30px;
+    text-align: center;
+    margin:40px;
+    margin-top:-50px;
+}
+.contactf {
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,2) ;
+    padding: 100px;
+}
+.contactformB{
+    position: relative;
+    z-index:100;
+}
+.contactformB form .form-control{
+    margin:15px 0;
+}
+.contactformB form input[type='text'],
+.contactformB form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid orange;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.contactformB form input:focus {
+    outline: none;
+}
+.contactformB form textarea{
+    border: 0;
+    border-bottom: 1px solid orange;
+    width: 100%;
+    resize: none;
+    color:black;
+    font-family:sans-serif;
+}
+.contactformB form textarea:focus {
+    outline: none;
+}
+.btn-sendc{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: solid 1px orange;
+    background:transparent;
+    border-radius: 10px;
+    color:orange;
+    margin:10px;
+
+}
+/*aboutus*/
+.aboutus{
+    height: 86vh;
+    background-color:black;
+}.aboutustext {
+margin: 0px;
+}
+.aboutustext h1 {
+    color:orange;
+    text-align: center;
+    margin-top: 0px;
+    border-bottom: 1px solid orange;
+    border-radius: 15px;
+    padding: 10px 10px
+}
+.aboutmidtext p{
+    color:black;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height:28px;
+    background:white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 15px;
+    margin-right:15px;
+    padding: 10px 10px;
+    
+}
+.aboutdowntext p{
+    color:black;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height:28px;
+    background:white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 15px;
+    margin-right:15px;
+    padding: 10px 10px;
+}
+
+/*construction*/
+.constructionsite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.constructionimage {
+    background-image: url(img/cs.png);
+    height:79vh;
+    width:79vw;
+    background-repeat:no-repeat;
+}
