@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @font-face {
     font-family: 'Rapier Zero';
-    src: url(/RapierZero.woff) format('woff');
+    src: url(fonts/RapierZero.woff) format('woff');
 }
 * {
     box-sizing: border-box;
@@ -154,7 +154,8 @@ a.logo:hover{
 }
 .card-head-third{
     display: flex ;
-    background:url(/img/intel.png);
+    background:url(/img/intel.png
+);
     max-width: 100%;
     height:auto;
     padding: 125px 0px;
