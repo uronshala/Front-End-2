@@ -33,7 +33,7 @@
                 <div class="card-body">
                     <h1>Nvidia RTX 3080</h1>
                     <p>Kjo është një kartë grafike jashtëzakonisht e fuqishme, e cila përdor një slot PCIe 4.0 (e përputhshme PCIe 3.0) për t'u lidhur me pllakën amë. Përveç kësaj, procesori grafik përdor arkitekturën Ampere dhe siguron një frekuencë deri në 1740 MHz.</p>
-                    <a href="products.html" class="btn">Lexo Meshume</a>
+                    <a href="products.php" class="btn">Lexo Meshume</a>
                 </div>
             </div>
             <!--Card2-->
@@ -43,7 +43,7 @@
                 <div class="card-body">
                     <h1>Ryzen 5</h1>
                     <p>Ky procesor i gjeneratës së tretë Ryzen mbështet çipset AMD A520, AMD B450, AMD B550, AMD X470, AMD X570. Vepron në frekuencë 3600 MHz. Ka 6 bërthama dhe kapacitet 65 W TDP. Për memorie RAM ofron frekuencë 3200 MHz.</p>
-                    <a href="products.html" class="btn">Lexo Meshume</a>
+                    <a href="products.php" class="btn">Lexo Meshume</a>
                 </div>
             </div>
             <!--Card3-->
@@ -53,7 +53,7 @@
                 <div class="card-body">
                     <h1>Intel i9 9900K</h1>
                     <p>Është një procesor jashtëzakonisht i fuqishëm i gjeneratës së 9-të të Coffee Lee Refresh projektuar për LGA 1151 socket, i cili ofron 8 bërthama fizike (16 threads) dhe ka frekuencë prej 3.6 GHz dhe deri në 5.0 GHz në modalitetin Turbo.</p>
-                    <a href="products.html" class="btn">Lexo Meshume</a>
+                    <a href="products.php" class="btn">Lexo Meshume</a>
                 </div>
             </div>
         </div>
