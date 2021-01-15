@@ -12,7 +12,7 @@
     <body>
         <!--navbar-->
         <?php include('header.php');?>
-        <!--Construction-->
+        <!--productssite-->
         <div class="constructionsite">
             <div class="constructionimage">
             </div>

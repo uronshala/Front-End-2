@@ -11,14 +11,8 @@
     </head>
     <body>
         <?php include('header.php');?>
-
-        <!--Construction-->
-        <div class="constructionsite">
-            <div class="constructionimage">
-            </div>
-        </div>
-
-
+        <!--loginform-->
+        <?php include('loginform.php');?>
             <!--footer-->
         <?php include('footer.php');?>
     </body>
