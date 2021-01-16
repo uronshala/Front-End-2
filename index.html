@@ -4,15 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width= device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <title>wesell</title>
 
     </head>
     <body>
-        <!--navbar-->
-        <div class="navbar">
-            <div class="container flex">
-                <a href="index.php" class="logo" ><h1>Wesell.</h1></a>
                 <nav>
+                  <input type="checkbox" id="check">
+                  <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                  </label>
+                  <label class="logo">Wesell</label>
                     <ul>
                         <li><a href="index.php">Ballina</a></li>
                         <li><a href="products.php">Produktet</a></li>
@@ -21,90 +23,72 @@
                         <li><a href="login.php">Kyçu</a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
-        <!--welcomephoto-->
-        <section class="welcomephoto">
-            <div class="shadewimg"></div>
-        <div class="wphoto">
-            <div class="center-text">
-                    <h1>For Gamers , By Gamers</h1>
-            </div>
-        </div>
-        </section>
-        <!---Cardssector-->
+                <section class="welcomephoto">
+                    <div class="wphoto"></div>
+                </section>
+                <!---Cardssector-->
         <div class="toptext">
-            <h1>Produktet më të kerkuara.</h1>
-        </div>
-        <div class="row">
-            <!--Card1-->
-            <div class="card">
-                <div class="card-head-first">
-                </div>
-                <div class="card-body">
-                    <h1>Nvidia RTX 3080</h1>
-                    <p>Kjo është një kartë grafike jashtëzakonisht e fuqishme, e cila përdor një slot PCIe 4.0 (e përputhshme PCIe 3.0) për t'u lidhur me pllakën amë. Përveç kësaj, procesori grafik përdor arkitekturën Ampere dhe siguron një frekuencë deri në 1740 MHz.</p>
-                    <a href="products.php" class="btn">Lexo Meshume</a>
-                </div>
-            </div>
-            <!--Card2-->
-            <div class="card">
-                <div class="card-head-second"> 
-                </div>
-                <div class="card-body">
-                    <h1>Ryzen 5</h1>
-                    <p>Ky procesor i gjeneratës së tretë Ryzen mbështet çipset AMD A520, AMD B450, AMD B550, AMD X470, AMD X570. Vepron në frekuencë 3600 MHz. Ka 6 bërthama dhe kapacitet 65 W TDP. Për memorie RAM ofron frekuencë 3200 MHz.</p>
-                    <a href="products.php" class="btn">Lexo Meshume</a>
-                </div>
-            </div>
-            <!--Card3-->
-            <div class="card">
-                <div class="card-head-third">
-                </div>
-                <div class="card-body">
-                    <h1>Intel i9 9900K</h1>
-                    <p>Është një procesor jashtëzakonisht i fuqishëm i gjeneratës së 9-të të Coffee Lee Refresh projektuar për LGA 1151 socket, i cili ofron 8 bërthama fizike (16 threads) dhe ka frekuencë prej 3.6 GHz dhe deri në 5.0 GHz në modalitetin Turbo.</p>
-                    <a href="products.php" class="btn">Lexo Meshume</a>
-                </div>
-            </div>
-        </div>
-    
-        <!--formsector-->
-    <section class="formcase">
-        <div class="form-build grid">
-            <div class="build-first-text">
-            <h1>Dëshironi të konfiguroni PC-n tuaj?</h1>
-            <p>Ne si kompani , me profesionistet tane ne staf , kemi kënaqesin te shohim idete e juaja per konfigurimet e ndryshme te PC-ve.I mirepresim kerkesat e juaja per konfigurime , me respekt Wesell.</p>
-            </div>
-            <div class="buildform cardF">
-                <h2>Kontakto me ne</h2>
-                <form>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Emri" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="lastname" placeholder="Mbiemri" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Emaili" required>
-                    </div>
-                    <input type="submit" value="Dergo" class="btn-send">
-                </form>
-            </div>
-        </div>
-    </section>
-    <!--footer-->
-    <section class="footer">
-        <div class =topfooter>
-            <h1>Wesell.</h1>
-            <h2>Kompani qe merret me shitjen e produkteve kompjuterike , apo edhe konfigurimet e PC-ve te ndryshme me staf te kualifikuar dhe pervoje pune.Tanime afer jush me kenaqesin me te madhe per te ju ofruar sherbimet tona.</h2>
-        </div>
-        <div class="rightfooter">
-         <a href="index.php">Home</a>
-         <a href="products.php">Produktet</a>
-         <a href="about.php">Rreth nesh</a>
-         <a href="contact.php">Kontakti</a>
-        </div>
-    </section>
+          <h1>Produktet më të kerkuara.</h1>
+      </div>
+      <div class="row">
+          <!--Card1-->
+          <div class="card">
+              <div class="card-head-first">
+              </div>
+              <div class="card-body">
+                  <h1>Nvidia RTX 3080</h1>
+                  <p>Kjo është një kartë grafike jashtëzakonisht e fuqishme, e cila përdor një slot PCIe 4.0 (e përputhshme PCIe 3.0) për t'u lidhur me pllakën amë. Përveç kësaj, procesori grafik përdor arkitekturën Ampere dhe siguron një frekuencë deri në 1740 MHz.</p>
+                  <a href="products.html" class="btn">Lexo Meshume</a>
+              </div>
+          </div>
+          <!--Card2-->
+          <div class="card">
+              <div class="card-head-second"> 
+              </div>
+              <div class="card-body">
+                  <h1>Ryzen 5</h1>
+                  <p>Ky procesor i gjeneratës së tretë Ryzen mbështet çipset AMD A520, AMD B450, AMD B550, AMD X470, AMD X570. Vepron në frekuencë 3600 MHz. Ka 6 bërthama dhe kapacitet 65 W TDP. Për memorie RAM ofron frekuencë 3200 MHz.</p>
+                  <a href="products.html" class="btn">Lexo Meshume</a>
+              </div>
+          </div>
+          <!--Card3-->
+          <div class="card">
+              <div class="card-head-third">
+              </div>
+              <div class="card-body">
+                  <h1>Intel i9 9900K</h1>
+                  <p>Është një procesor jashtëzakonisht i fuqishëm i gjeneratës së 9-të të Coffee Lee Refresh projektuar për LGA 1151 socket, i cili ofron 8 bërthama fizike (16 threads) dhe ka frekuencë prej 3.6 GHz dhe deri në 5.0 GHz në modalitetin Turbo.</p>
+                  <a href="products.html" class="btn">Lexo Meshume</a>
+              </div>
+          </div>
+      </div>
+      <!---kontakt--->
+      <div class="container">
+          <div class="contact-box">
+              <div class="left">
+                  <div class="right">
+                      <h2>Kontakto me ne</h2>
+                      <input type="text" class="field" placeholder="Emri"required>
+                      <input type="text" class="field" placeholder="Mbiemri"required>
+                      <input tpye="emaili" class="field" placeholder="Emaili"required>
+                      <button type="submit" class="btn-send">Dergo</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!----footer-->
+      <footer>
+          <div class="footer">
+              <h3>Wesell</h3>
+              <ul class="buttons">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="about.html">Rreth Nesh</a></li>
+                  <li><a href="contact.html">Kontakti</a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>Copyright &copy;2021 Wesell.</p>
+          </div>
+      </footer>
     </body>
-</html>

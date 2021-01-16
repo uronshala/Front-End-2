@@ -1,16 +1,18 @@
 <html>
 <body>
-<section class="footer">
-        <div class =topfooter>
-            <h1>Wesell.</h1>
-            <h2>Kompani qe merret me shitjen e produkteve kompjuterike , apo edhe konfigurimet e PC-ve te ndryshme me staf te kualifikuar dhe pervoje pune.Tanime afer jush me kenaqesin me te madhe per te ju ofruar sherbimet tona.</h2>
-        </div>
-        <div class="rightfooter">
-         <a href="index.php">Home</a>
-         <a href="products.php">Produktet</a>
-         <a href="about.php">Rreth nesh</a>
-         <a href="contact.php">Kontakti</a>
-        </div>
-    </section>
-    </body>
+<footer>
+          <div class="footer">
+              <h3>wesell</h3>
+              <p>wesell is a company that sells tech parts</p>
+              <ul class="buttons">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="about.html">Rreth Nesh</a></li>
+                  <li><a href="contact.html">Kontakti</a></li>
+              </ul>
+          </div>
+          <div class="div footer-bottom">
+              <p>Copyright &copy;2021 Wesell.</p>
+          </div>
+      </footer>
 </html>
