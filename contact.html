@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width= device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>wesell</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>wesell</title>
 
-    </head>
-    <body>
-        <!--navbar-->
-        <div class="navbar">
-            <div class="container flex">
-                <a href="index.html" class="logo" ><h1>Wesell.</h1></a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Ballina</a></li>
-                        <li><a href="products.html">Produktet</a></li>
-                        <li><a href="about.html">Rreth Nesh</a></li>
-                        <li><a href="contact.html">Kontakti</a></li>
-                        <li><a href="login.html">Kyçu</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <!---form-->
-    <div class="contactbody">
-            <div class="contactf">
-                <h1>Kontakto me ne</h1>
-                <div class="contactformB">
-                <form>
-                <div class="form-control">
-                    <input type="text" name="name" placeholder="Emri" required>
-                </div>
-                <div class="form-control">
-                    <input type="text" name="lastname" placeholder="Mbiemri" required>
-                </div>
-                <div class="form-control">
-                    <input type="email" name="email" placeholder="Emaili" required>
-                </div>
-                    <textarea cols="30" rows="10" placeholder="Shkruaj"></textarea>
-                </div>
-                <input type="submit" value="Dergo" class="btn-sendc">
-                </form>
+</head>
+<body>
+    <!--navbar-->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Wesell</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <!---form-->
+        <form>
+        <div class="contact">
+            <div class="contactbox">
+                <div class="left">
+                    <div class="right">
+                        <h2>Contact</h2>
+                        <input type="text" class="field" placeholder="Name" required>
+                        <input type="text" class="field" placeholder="Surname" required>
+                        <input tpye="emaili" class="field" placeholder="Email" required>
+                        <textarea class="area" rows="4" cols="50" placeholder="Type here" required></textarea>
+                        <button type="submit" name="submit" class="btn-send">Send</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 
-            <!--footer-->
-    <section class="footer">
-        <div class =topfooter>
-            <h1>Wesell.</h1>
-            <h2>Kompani qe merret me shitjen e produkteve kompjuterike , apo edhe konfigurimet e PC-ve te ndryshme me staf te kualifikuar dhe pervoje pune.Tanime afer jush me kenaqesin me te madhe per te ju ofruar sherbimet tona.</h2>
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <h3>Wesell</h3>
+            <ul class="buttons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <div class="rightfooter">
-         <a href="index.html">Home</a>
-         <a href="products.html">Produktet</a>
-         <a href="about.html">Rreth nesh</a>
-         <a href="contact.html">Kontakti</a>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2021 Wesell.</p>
         </div>
-    </section>
-    </body>
-    </head>
+    </footer>
+</body>
 </html>
