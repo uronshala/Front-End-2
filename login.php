@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>wesell</title>
-</head>
+
+<?php
+    include 'header.php';
+?>
 
 <body>
     <!--navbar-->
@@ -18,11 +13,11 @@
             </label>
             <label class="logo">Wesell</label>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href='index.php'>Home</a></li>
+                <li><a href='products.php'>Products</a></li>
+                <li><a href='about.php'>About</a></li>
+                <li><a href='contact.php'>Contact</a></li>
+                <li><a href='login.php'>Login</a></li>
             </ul>
         </nav>
     </header>
@@ -73,21 +68,9 @@
             </form>
         </div>
     </div>
-    <!--footer-->
-    <footer>
-        <div class="footer">
-            <h3>Wesell</h3>
-            <ul class="buttons">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">Rreth Nesh</a></li>
-                <li><a href="contact.html">Kontakti</a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright &copy;2021 Wesell.</p>
-        </div>
-    </footer>
-    <script src="login.js"></script>
-</body>
-</html>
+    <script src ='login.js'></script>
+
+
+<?php
+    include 'footer.php';
+?>
