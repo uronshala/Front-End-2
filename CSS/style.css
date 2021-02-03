@@ -125,7 +125,7 @@ nav ul li a:hover {
 
 /*welcomephoto*/
 .wphoto {
-    background: url(img/main-img.jpg);
+    background: url(../img/main-img.jpg);
     height: 50vh;
     width: 100%;
     background-size: cover;
@@ -173,7 +173,7 @@ nav ul li a:hover {
 .card-head-first {
     display: absolute;
     padding: 125px 0px;
-    background: url(img/card1.png);
+    background: url(../img/card1.png);
     height: 10px;
     width: 100%;
     background-size: cover;
@@ -187,7 +187,7 @@ nav ul li a:hover {
 
 .card-head-second {
     display: absolute;
-    background: url(img/ryzen.png);
+    background: url(../img/ryzen.png);
     padding: 125px 0px;
     height: 10px;
     width: 100%;
@@ -202,7 +202,7 @@ nav ul li a:hover {
 
 .card-head-third {
     Display: absolute;
-    background: url(img/intel.png);
+    background: url(../img/intel.png);
     height: 10px;
     padding: 125px 0px;
     width: 100%;

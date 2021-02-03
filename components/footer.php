@@ -13,5 +13,6 @@
             <p>Copyright &copy;2021 Wesell.</p>
         </div>
     </footer>
+    <script src ='login.js'></script>
 </body>
 </html>
