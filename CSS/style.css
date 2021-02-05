@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-@font-face {
-    font-family: 'Rapier Zero';
-    src: url(fonts/RapierZero.woff) format('woff');
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -22,6 +17,7 @@ nav {
     background: black;
     position: fixed;
     height: 75px;
+    z-index: 1;
     top: 0;
     overflow: hidden;
     width: 100%;
@@ -125,7 +121,7 @@ nav ul li a:hover {
 
 /*welcomephoto*/
 .wphoto {
-    background: url(../img/main-img.jpg);
+    background: url(img/main-img.jpg);
     height: 50vh;
     width: 100%;
     background-size: cover;
@@ -173,7 +169,7 @@ nav ul li a:hover {
 .card-head-first {
     display: absolute;
     padding: 125px 0px;
-    background: url(../img/card1.png);
+    background: url(/images/card1.png);
     height: 10px;
     width: 100%;
     background-size: cover;
@@ -187,7 +183,7 @@ nav ul li a:hover {
 
 .card-head-second {
     display: absolute;
-    background: url(../img/ryzen.png);
+    background: url(images/card2.png);
     padding: 125px 0px;
     height: 10px;
     width: 100%;
@@ -202,7 +198,7 @@ nav ul li a:hover {
 
 .card-head-third {
     Display: absolute;
-    background: url(../img/intel.png);
+    background: url(img/intel.png);
     height: 10px;
     padding: 125px 0px;
     width: 100%;
@@ -342,6 +338,7 @@ nav ul li a:hover {
 
 /*footer*/
 footer {
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -469,25 +466,19 @@ footer {
     color: orange;
 }
 .formstyle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 400px;
     background:white;
     border-radius: 10px;
 }
 .formstyle h1{
-    margin-top: ;
     text-align: center;
     padding: 15px 0  20px 0;
 }
-.formstyle form{
+.loginform form{
     padding:0 40px;
     box-sizing: border-box;
 }
-form .txt_field{
-    position: relative;
+.txt_field{
     border-bottom:2px solid #adadad;
     margin:30px 0;
 }
@@ -499,35 +490,6 @@ form .txt_field{
     border:none;
     background:none;
     outline:none;
-}
-.txt_field label {
-    position: absolute;
-    top:50%;
-    left: 5px;
-    color:#adadad;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-.txt_field span::before{
-    content:'';
-    position: absolute;
-    top: 40px;
-    left:0;
-    width:0%;
-    height:2px;
-    background:orange;
-    transition: .5s;
-}
-.txt_field input:focus ~ label , 
-.txt_field input:valid ~ label {
-    top:-5px;
-    color:orange;
-}
-.txt_field input:focus ~ span::before, 
-.txt_field input:valid ~ span::before {
-width: 100%;
 }
 input[type="submit"]{
     width: 100%;
@@ -558,4 +520,162 @@ input[type="submit"]:hover{
 }
 .hidden {
     display:none;
+}
+/*about*/
+.aboutboddy {
+    display: block;
+    height: 80vh;
+    background-color: #191919;
+}
+.aboutboddy h1 {
+    padding: 20px 0px 0px 14px;
+    text-align: center;
+    color: white;
+}
+.aboutboddy p {
+    text-align: center;
+    color:white;
+    display: inline-block;
+    line-height: 25px;
+    margin-top: 15px;
+}
+/*productspage*/
+img{
+    width: 100%;
+    display: block;
+}
+.container-products{
+    width: 88vw;
+    margin:0 auto;
+}
+.p-title,
+.fp-title{
+    padding:0.6rem 0;
+    text-transform:capitalize;
+}
+.p-title{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding:1.3rem 0;
+    color: orange;
+    font-family: sans-serif;
+    
+}
+
+.fp-title{
+    font-weight: 300;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.products{
+    background: #191919;
+    padding:3.2rem 0;
+}
+.products .p-text{
+    text-align: center;
+    width: 70%;
+    margin:0.9rem auto;
+}
+.product{
+    margin:2rem;
+    position: relative;
+}
+.product-content{
+    background:#ededed;
+    padding:3rem 0.5rem 2rem 0.5rem;
+    cursor:pointer;
+}
+.product-img{
+    background:#ededed;
+    width: 300px;
+    height: 210px;
+    margin:0 auto;
+    border-radius:50%;
+    align-items: center;
+}
+.product-btn{
+    display: flex;
+    justify-content: center;
+    margin-top:1.4rem;
+    transition:opacity 0.5s ease;
+    opacity: 0;
+}
+.btn-cart,.btn-buy{
+    background: transparent;
+    padding: 0.8rem 0;
+    width: 125px;
+    font-family:inherit;
+    text-transform: uppercase;
+    cursor:pointer;
+    border:none;
+    transition: all 0.6s ease;
+}
+
+.btn-cart{
+    background:transparent;
+    color: black;
+    margin-right: 5px;
+    border: 1px solid black;
+}
+.btn-cart:hover{
+    background:black;
+    color:white;
+    border:1px solid black;
+}
+.btn-buy{
+    background:transparent;
+    color:black;
+    border: 1px solid black;
+}
+.btn-buy:hover{
+    background:black;
+    color:white;
+    border:1px solid black;
+}
+.product-info{
+    background:white;
+    padding:2rem;
+}
+.product-info-top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-name{
+    color:black;
+    display: block;
+    border:none;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-price{
+    padding-top:0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.product:hover .product-btn{
+    opacity: 1;
+}
+.product a:hover{
+    border:none;
+}
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
 }
