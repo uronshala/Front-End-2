@@ -1,3 +1,7 @@
+<?php
+session_start();
+include_once '../code/adminClass.php'
+?>
 <!DOCTYPE html>
 <html>
 
@@ -22,6 +26,23 @@
             <li><a href='products.php'>Products</a></li>
             <li><a href='about.php'>About</a></li>
             <li><a href='contact.php'>Contact</a></li>
+            <?php
+            if (!isset($_SESSION['role'])){
+
+            ?>
             <li><a href='login.php'>Login</a></li>
+            <?php
+            }
+            ?>
+            <?php
+            
+            
+            if (isset($_SESSION['role']) && ($_SESSION['role'] == 1 || $_SESSION['role'] == 0)){
+                
+            ?>
+            <li><a href='../code/logout.php'>Logout</a></li>
+            <?php
+            }
+            ?>
         </ul>
     </nav>

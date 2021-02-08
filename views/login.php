@@ -5,50 +5,38 @@
 
 
 
-    <div class="loginform">
-        <div class="formstyle forms form-style">
-            <h1>Login</h1>
-            <form method="post">
+<div class="loginform">
+        <form action="../code/LoginVerify.php" method="post" >
+            <div class="formstyle forms form-style">
+                <h1>Login</h1>
                 <div class="txt_field">
-                    <input type="text" required>
-                    <span></span>
-                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Username">
                 </div>
                 <div class="txt_field">
-                    <input type="password" required>
-                    <span></span>
-                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password">
                 </div>
-                <input type="submit" value="Login">
+                <input type="submit" name="login-btn" value="Login">
                 <div class="signupbtn">
                     Not a member? <a href="#" onclick="changeForm(1)">Signup</a>
                 </div>
-            </form>
-        </div>
-        <div class="formstyle forms hidden">
-            <h1>Create your Account</h1>
-            <form method="post">
+            </div>
+            <div class="formstyle forms hidden">
+                <h1>Create your Account</h1>
                 <div class="txt_field">
-                    <input type="text" required>
-                    <span></span>
-                    <label>Firstname</label>
+                    <input type="text" name="register-username" placeholder="Username">
                 </div>
                 <div class="txt_field">
-                    <input type="text" required>
-                    <span></span>
-                    <label>Lastname</label>
+                    <input type="text" name="register-lastname" placeholder="Lastname">
                 </div>
                 <div class="txt_field">
-                    <input type="password" required>
-                    <span></span>
-                    <label>Password</label>
+                    <input type="password" name="register-password" placeholder="Password">
                 </div>
-                <input type="submit" value="Signup">
+                <input type="submit" name="register-btn" value="SignUp">
                 <div class="signupbtn">
                     Already a member? <a href="#" onclick="changeForm(0)">Login</a>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
     
 
