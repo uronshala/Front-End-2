@@ -1,5 +1,5 @@
 <?php
-    include '../components/header.php';
+    include 'header.php';
 ?>
 
 
@@ -12,7 +12,11 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
+<<<<<<< HEAD
                             <img src="../images/card3.png" alt="Product">
+=======
+                            <img src="images/card3.png" alt="Product">
+>>>>>>> 8f8c66325fcc86aa1e42f9e14245a1b8e83d1f35
                         </div>
                         <div class="product-btn">
                             <button type="button" class="btn-buy">Buy Now</button>
@@ -31,7 +35,11 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
+<<<<<<< HEAD
                             <img src="../images/card2.png" alt="Product">
+=======
+                            <img src="images/card2.png" alt="Product">
+>>>>>>> 8f8c66325fcc86aa1e42f9e14245a1b8e83d1f35
                         </div>
                         <div class="product-btn">
                             <button type="button" class="btn-buy">Buy Now</button>
@@ -50,7 +58,11 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
+<<<<<<< HEAD
                             <img src="../images/card4.png" alt="Product">
+=======
+                            <img src="images/card4.png" alt="Product">
+>>>>>>> 8f8c66325fcc86aa1e42f9e14245a1b8e83d1f35
                         </div>
                         <div class="product-btn">
                             <button type="button" class="btn-buy">Buy Now</button>
@@ -69,7 +81,11 @@
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
+<<<<<<< HEAD
                             <img src="../images/card5.png" alt="Product">
+=======
+                            <img src="images/card5.png" alt="Product">
+>>>>>>> 8f8c66325fcc86aa1e42f9e14245a1b8e83d1f35
                         </div>
                         <div class="product-btn">
                             <button type="button" class="btn-buy">Buy Now</button>
