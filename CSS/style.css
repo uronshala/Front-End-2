@@ -28,7 +28,7 @@ label.logo {
     font-size: 25px;
     line-height: 75px;
     padding: 0 100px;
-    font-weight: bolder;
+    font-weight: 200;
 }
 
 nav ul {
@@ -232,6 +232,8 @@ nav ul li a:hover {
     border: solid 1px orange;
     background: transparent;
     border-radius: 5px;
+    text-transform: uppercase;
+    font-family: inherit;
 }
 
 .card-body .btn:hover {
@@ -466,13 +468,13 @@ footer {
     color: orange;
 }
 .formstyle{
-    width: 400px;
+    width: 430px;
     background:white;
     border-radius: 10px;
 }
 .formstyle h1{
     text-align: center;
-    padding: 15px 0  20px 0;
+    padding: 20px 0  25px 0;
 }
 .loginform form{
     padding:0 40px;
@@ -480,7 +482,7 @@ footer {
 }
 .txt_field{
     border-bottom:2px solid #adadad;
-    margin:30px 0;
+    margin:30px 30px;
 }
 .txt_field input{
     width: 100%;
@@ -492,23 +494,28 @@ footer {
     outline:none;
 }
 input[type="submit"]{
-    width: 100%;
+    width: 90%;
     height: 50px;
-    border:1px solid;
+    border: 1px solid;
     background: transparent;
-    border-radius:25px;
-    font-size:18px;
-    color:#adadad;
-    cursor:pointer;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #adadad;
+    cursor: pointer;
     outline: none;
+    margin-left: 5%;
 }
 input[type="submit"]:hover{
     background:orange;
     color:white;
     transition: .5s;
 }
+.login-btn {
+    padding: 10px 40px;
+}
 .signupbtn{
-    margin:30px 0;
+    margin:30px 30px;
+    padding: 20px;
     text-align: center;
     font-size:16px;
     color: #666666;
@@ -587,11 +594,9 @@ img{
     cursor:pointer;
 }
 .product-img{
-    background:#ededed;
     width: 300px;
     height: 210px;
     margin:0 auto;
-    border-radius:50%;
     align-items: center;
 }
 .product-btn{
@@ -655,8 +660,9 @@ img{
     padding-top:0.6rem;
     padding-right: 0.6rem;
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+    color:#545454;
 }
 .product:hover .product-btn{
     opacity: 1;
@@ -678,4 +684,53 @@ img{
         margin-right: 1rem;
         margin-left: 1rem;
     }
+}
+
+/*dashboard*/
+.dbbackground {
+    display: block;
+    height:90vh;
+    background: #191919;
+    justify-content: center;
+}
+.dbtitle{
+    padding: 6px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    height: 50px;
+}
+.table {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.tbtitle {
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+table , td , th {
+    border-radius: 20px;
+}
+td,th{
+    padding: 10px 100px;
+    background-color: white;
+}
+table {
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
