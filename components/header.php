@@ -10,6 +10,8 @@ include_once '../code/adminClass.php'
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="../CSS/style.css?v=<?php echo time(); ?>">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     
     <title>wesell</title>
 
@@ -22,6 +24,7 @@ include_once '../code/adminClass.php'
         </label>
         <label class="logo">Wesell</label>
         <ul>
+            <li><a href='dashboard.php'>Dashboard</a></li>
             <li><a href='index.php'>Home</a></li>
             <li><a href='products.php'>Products</a></li>
             <li><a href='about.php'>About</a></li>
