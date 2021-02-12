@@ -537,14 +537,25 @@ input[type="submit"]:hover{
 .aboutboddy h1 {
     padding: 20px 0px 0px 14px;
     text-align: center;
-    color: white;
+    color: orange;
 }
 .aboutboddy p {
     text-align: center;
-    color:white;
+    color:black;
     display: inline-block;
     line-height: 25px;
     margin-top: 15px;
+    overflow: hidden;
+}
+.aboutdiv {
+    background: white;
+    border-radius: 10px;
+    height:25%;
+    margin-top: 15px;
+}
+.wesellp {
+    color: orange;
+    font-weight: 800;
 }
 /*productspage*/
 img{
@@ -717,8 +728,8 @@ img{
 .tbtitle {
     padding: 10px;
     font-weight: bold;
-    color: white;
-    font-size: 18px;
+    color: orange;
+    font-size: 14px;
     text-transform: uppercase;
     
 }
@@ -726,7 +737,7 @@ table , td , th {
     border-radius: 20px;
 }
 td,th{
-    padding: 10px 100px;
+    padding: 10px 70px;
     background-color: white;
 }
 table {
