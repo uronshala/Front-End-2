@@ -531,7 +531,7 @@ input[type="submit"]:hover{
 /*about*/
 .aboutboddy {
     display: block;
-    height: 80vh;
+    height: 90vh;
     background-color: #191919;
 }
 .aboutboddy h1 {
@@ -545,12 +545,13 @@ input[type="submit"]:hover{
     display: inline-block;
     line-height: 25px;
     margin-top: 15px;
-    overflow: hidden;
+    font-size: 17px;
 }
 .aboutdiv {
     background: white;
-    border-radius: 10px;
-    height:25%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 10px;
     margin-top: 15px;
 }
 .wesellp {
@@ -696,7 +697,31 @@ img{
         margin-left: 1rem;
     }
 }
-
+@media screen and (min-width: 348px){
+    .product-img{
+        width: 210px;
+    }
+}
+@media screen and (min-width: 331px){
+    .product-img{
+        width: 210px;
+    }
+}
+@media screen and (min-width: 330px){
+    .product-img{
+        width: 210px;
+    }
+}
+@media screen and (min-width: 1634px){
+    .product-img{
+        width: 300px;
+    }
+}
+@media screen and (min-width: 836px){
+    .slider-content{
+        padding: 300px 300px;
+    }
+}
 /*dashboard*/
 .dbbackground {
     display: block;
