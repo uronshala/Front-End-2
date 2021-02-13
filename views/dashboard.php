@@ -1,5 +1,6 @@
 <?php
 include '../components/header.php';
+<<<<<<< HEAD
 include_once '../code/databaseConfig.php';
 include_once '../code/userMapper.php';
 // include_once '../code/deleteUser.php';
@@ -56,6 +57,24 @@ $result = $userMapper->getAllUsers();
 
 
 
+=======
+?>
+<div class="dbbackground">
+    <div>
+        <h1 class="dbtitle">Dashboard</h1>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>Username</td>
+                <td>LastName</td>
+                <td>Role</td>
+            </tr>
+        </table>
+    </div>
+</div>
+>>>>>>> 0aa92eaa8a6545e5688272611093af378748a87f
 <?php
 include '../components/footer.php';
 ?>
