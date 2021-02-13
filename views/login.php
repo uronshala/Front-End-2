@@ -6,14 +6,14 @@
 
 
 <div class="loginform">
-        <form action="../code/LoginVerify.php" method="post" >
+        <form action="../code/LoginVerify.php" method="post" onsubmit="validate()">
             <div class="formstyle forms form-style">
                 <h1>Login</h1>
                 <div class="txt_field">
-                    <input type="text" name="username" placeholder="Username">
+                    <input type="text" name="login-username" placeholder="Username">
                 </div>
                 <div class="txt_field">
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="login-password" placeholder="Password">
                 </div>
                 <input type="submit" name="login-btn" value="Login">
                 <div class="signupbtn">

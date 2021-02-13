@@ -10,16 +10,7 @@ class Admin extends Person
     }
     
 
-    public function setSession()
-    {
-
-        $_SESSION["role"] = 1;
-        $_SESSION['roleName'] = "Administrator";
-    }
-    public function getSession(){
-        $this->setSession();
-        return $this->$_SESSION;
-    }
+   
 
     public function setCookie()
     {
