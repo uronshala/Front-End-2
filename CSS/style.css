@@ -543,7 +543,7 @@ input[type="submit"]:hover {
 .aboutdiv {
     background: white;
     border-radius: 10px;
-    height:25%;
+    height:100%;
     margin-top: 15px;
 }
 .wesellp {
