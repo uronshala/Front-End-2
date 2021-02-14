@@ -450,26 +450,24 @@ footer {
     background: #191919;
     color: orange;
 }
-
-.formstyle {
+.formstyle{
     width: 430px;
-    background: white;
+    background:white;
     border-radius: 10px;
 }
 
 .formstyle h1 {
     text-align: center;
-    padding: 20px 0 25px 0;
+    padding: 20px 0  25px 0;
 }
 
 .loginform form {
     padding: 0 20px;
     box-sizing: border-box;
 }
-
-.txt_field {
-    border-bottom: 2px solid #adadad;
-    margin: 30px 30px;
+.txt_field{
+    border-bottom:2px solid #adadad;
+    margin:30px 30px;
 }
 
 .txt_field input {
@@ -481,8 +479,7 @@ footer {
     background: none;
     outline: none;
 }
-
-input[type="submit"] {
+input[type="submit"]{
     width: 90%;
     height: 50px;
     border: 1px solid;
@@ -500,13 +497,11 @@ input[type="submit"]:hover {
     color: white;
     transition: .5s;
 }
-
 .login-btn {
     padding: 10px 40px;
 }
-
-.signupbtn {
-    margin: 30px 30px;
+.signupbtn{
+    margin:30px 30px;
     padding: 20px;
     text-align: center;
     font-size: 16px;
@@ -539,19 +534,21 @@ input[type="submit"]:hover {
 
 .aboutboddy p {
     text-align: center;
-    color: black;
+    color:black;
     display: inline-block;
     line-height: 25px;
     margin-top: 15px;
-    font-size: 17px;
+    overflow: hidden;
 }
-
 .aboutdiv {
     background: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 10px 10px;
+    border-radius: 10px;
+    height:100%;
     margin-top: 15px;
+}
+.wesellp {
+    color: orange;
+    font-weight: 800;
 }
 
 .wesellp {
@@ -612,11 +609,10 @@ img {
     padding: 3rem 0.5rem 2rem 0.5rem;
     cursor: pointer;
 }
-
-.product-img {
+.product-img{
     width: 300px;
     height: 210px;
-    margin: 0 auto;
+    margin:0 auto;
     align-items: center;
 }
 
@@ -749,6 +745,12 @@ table {
         line-height: 17px;
         font-weight: 900;
     }
+    .aboutboddy h1 {
+        padding: 0px ;
+    }
+    .aboutdiv {
+	margin-top:0px;
+    }
     /*loginmediaquery*/
     .formstyle {
         width: 300px;
@@ -787,8 +789,8 @@ table {
 @media screen and (width: 411px) {
     /*aboutmediaquery*/
     .aboutboddy p {
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 13px;
+        line-height: 20px;
         font-weight: 900;
     }
     /*loginmediaquery*/
@@ -989,6 +991,12 @@ table {
     .btnscroll {
         opacity: 1;
     }
+    /*about mediaquery*/ 
+    .aboutboddy p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 900;
+    }
 }
 
 /*Galaxy fold QUERYS*/
@@ -1059,14 +1067,6 @@ table {
     .product {
         margin-right: 1rem;
         margin-left: 1rem;
-    }
-}
-
-@media screen and (max-width: 528px) {
-    .aboutboddy p {
-        font-size: 12px;
-        line-height: 20px;
-        font-weight: 900;
     }
 }
 

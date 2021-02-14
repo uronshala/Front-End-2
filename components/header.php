@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once '../code/adminClass.php'
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,7 +26,14 @@ include_once '../code/adminClass.php'
         </label>
         <label class="logo">Wesell</label>
         <ul>
+            <?php
+            if(isset($_SESSION['role']) && $_SESSION['role'] == 1){
+
+            ?>
             <li><a href='dashboard.php'>Dashboard</a></li>
+            <?php
+            }
+            ?>
             <li><a href='index.php'>Home</a></li>
             <li><a href='products.php'>Products</a></li>
             <li><a href='about.php'>About</a></li>
@@ -40,10 +47,10 @@ include_once '../code/adminClass.php'
             }
             ?>
             <?php
-
-
-            if (isset($_SESSION['role']) && ($_SESSION['role'] == 1 || $_SESSION['role'] == 0)) {
-
+            
+            
+            if (isset($_SESSION['role']) && ($_SESSION['role'] == 1 || $_SESSION['role'] == 0)){
+               
             ?>
                 <li><a href='../code/logout.php'>Logout</a></li>
             <?php

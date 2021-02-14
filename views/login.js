@@ -19,14 +19,26 @@ function changeForm(number){
   }
 const usernameReg = /^[a-zA-Z0-9]{3,}$/; // new RegExp('')
 const passwordReg = /^[A-Z]+$/; // new RegExp('')
+// const emailReg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 function validate() {
     let inputs = document.querySelectorAll("input");
-    usrname = inputs[0].value;
+    username = inputs[0].value;
     password = inputs[1].value;
-    if (usernameReg.test(usrname) && password != "") {
+    if (usernameReg.test(username) && password != "") {
         return true;
     }
     return false;
 
+}
+
+
+function validateContact(){
+  let inputs = document.querySelectorAll("input");
+  email = inputs[2].value;
+  if (emailReg.test(email)){
+    return true;
+  }
+  return false;
+    
 }

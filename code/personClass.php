@@ -15,7 +15,7 @@ abstract class Person
         $this->role = $role;
     }
 
-    abstract protected function setSession();
+    
     abstract protected function setCookie();
 
     protected function getUsername()

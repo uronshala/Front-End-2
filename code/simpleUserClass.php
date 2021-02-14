@@ -10,11 +10,7 @@ class SimpleUser extends Person
         $this->lastname = $lastname;
     }
 
-    public function setSession()
-    {
-        $_SESSION["role"] = "0";
-        $_SESSION['roleName'] = "SimpleUser";
-    }
+    
 
     public function setCookie()
     {

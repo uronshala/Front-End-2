@@ -13,7 +13,7 @@ if (isset($_POST['login-btn'])) {
     $register->registerUser();
 } 
 else {
-    header("Location:../views/login.php");
+    header("Location:../views/login.php");    
 }
 
 class LoginLogic
@@ -23,8 +23,8 @@ class LoginLogic
 
     public function __construct($formData)
     {
-        $this->username = $formData['username'];
-        $this->password = $formData['password'];
+        $this->username = $formData['login-username'];
+        $this->password = $formData['login-password'];
     }
 
     public function verifyData()

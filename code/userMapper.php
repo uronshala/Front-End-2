@@ -18,7 +18,17 @@ class UserMapper extends DatabasePDOConfiguration
         $statement = $this->conn->prepare($query);
         $statement->bindParam(":id", $userid);
         $statement->execute();
-        return $result = $statement->fetch(PDO::FETCH_ASSOC);
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function deleteUserByID($userid){
+        $query = "delete from user where userid=:id";
+        $statement = $this->conn->prepare($query);
+        $statement->bindParam(":id", $userid);
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
+
     }
 
     public function getUserByUsername($username)
@@ -33,7 +43,7 @@ class UserMapper extends DatabasePDOConfiguration
 
     public function getAllUsers()
     {
-        $query="select * from user";
+        $query="SELECT * FROM user";
         $statement = $this->conn->prepare($query);
         $statement->execute();
         $result = $statement->fetchAll();
