@@ -34,6 +34,7 @@ session_start();
             <?php
             }
             ?>
+
             <li><a href='index.php'>Home</a></li>
             <li><a href='products.php'>Products</a></li>
             <li><a href='about.php'>About</a></li>
@@ -47,6 +48,8 @@ session_start();
             }
             ?>
             <?php
+
+
             
             
             if (isset($_SESSION['role']) && ($_SESSION['role'] == 1 || $_SESSION['role'] == 0)){
