@@ -8,7 +8,6 @@ include_once '../code/contactMapper.php';
 
 include_once '../code/databaseConfig.php';
 include_once '../code/userMapper.php';
->>>>>>> 4cd0df3657cf489bb2d714a946fb091fc9d04af8
 // include_once '../code/deleteUser.php';
 $userMapper = new UserMapper();
 $result = $userMapper->getAllUsers();
@@ -58,11 +57,6 @@ $result = $userMapper->getAllUsers();
     </div>
 </div>
     
-
-
-
-
-?>
 <div class="dbbackground">
    <div class="h1">
     <h1 class="dbtitle">Dashboard</h1>

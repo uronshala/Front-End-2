@@ -733,16 +733,6 @@ table {
     width: 95%;
     border-bottom: 1px solid orange;
 }
-.msgtable {
-    display: flex;
-    margin-top: 20px;
-    height: 430px;
-    width: 100%;
-    justify-content: center;
-    border-radius: 10px;
-    overflow-x: auto;
-    background-color: white;
-}
 
 /* ALL MEDIA QUERYS */
 
@@ -754,6 +744,10 @@ table {
         font-size: 12px;
         line-height: 17px;
         font-weight: 900;
+    }
+    .aboutdiv {
+        padding: 0px 5px;
+        margin-top: 0px;
     }
     /*loginmediaquery*/
     .formstyle {
@@ -995,6 +989,16 @@ table {
     .btnscroll {
         opacity: 1;
     }
+    /*about media query*/
+    .aboutboddy p {
+        font-size: 13px;
+        line-height: 15px;
+        font-weight: 600;
+    }
+    .aboutboddy h1 {
+        padding: 10px 0px 0px 0px;
+        font-size: 22px;
+    }
 }
 
 /*Galaxy fold QUERYS*/
@@ -1065,14 +1069,6 @@ table {
     .product {
         margin-right: 1rem;
         margin-left: 1rem;
-    }
-}
-
-@media screen and (max-width: 528px) {
-    .aboutboddy p {
-        font-size: 12px;
-        line-height: 20px;
-        font-weight: 900;
     }
 }
 
